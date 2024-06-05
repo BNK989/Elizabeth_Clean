@@ -14,8 +14,8 @@
     <script src="{{ 'application.js' | asset_url }}" defer></script>
   </head>
   <body>
+    {% section 'header' %}
     <main role="main">
-    <h1 class="bg-green-400 text-red-500">Test</h1>
       {{ content_for_layout }}
     </main>
   </body>
