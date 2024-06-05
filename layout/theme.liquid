@@ -10,10 +10,12 @@
     {{ content_for_header }}
     <!-- Header hook for plugins -->
     {{ 'application.css' | asset_url | stylesheet_tag }}
-    {{ 'application.js' | asset_url | script_tag }}
+    {% comment %}Was og like this but cused an error {{ 'application.js' | asset_url | script_tag }} {% endcomment %}
+    <script src="{{ 'application.js' | asset_url }}" defer></script>
   </head>
   <body>
     <main role="main">
+    <h1 class="bg-green-400 text-red-500">Test</h1>
       {{ content_for_layout }}
     </main>
   </body>
