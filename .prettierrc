@@ -6,5 +6,6 @@
     "arrays": "semi-spaced",
     "bracketSameLine": true,
     "semi": false,
-    "arrowParens": "always"
+    "arrowParens": "always",
+    "plugins": ["@shopify/prettier-plugin-liquid"]      
 }
